@@ -1,10 +1,10 @@
 export const breakpoints = {
-  sm: 20,
-  md: 30,
-  lg: 45,
-  xl: 60
+  sm: "320px",
+  md: "480px",
+  lg: "720px",
+  xl: "960px"
 };
 
-export const mediaQueries = key => {
-  return style => `@media (min-width: ${breakpoints[key]}em) { ${style} }`;
+export const mediaQueries = (key) => {
+  return (style) => `@media (min-width: ${breakpoints[key]}) { ${style} }`;
 };
